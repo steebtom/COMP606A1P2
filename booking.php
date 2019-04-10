@@ -1,10 +1,10 @@
 <?php
 
-if((isset($_POST['msg1']))||(isset($_POST['msg2']))||(isset($_POST['msg3'])))
+if((isset($_POST['msg1']))||(isset($_POST['msg2']))||(isset($_POST['msg3'])))     //Displaying Booking form if book button is pressed
 {
     require "header.php";
-
-    echo'
+                                                                          
+    echo'                                                                  
         <html>
         <head>
         <!-- <link rel="stylesheet" type="text/css" media="screen" href="./main.css"> -->

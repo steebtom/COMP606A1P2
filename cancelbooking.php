@@ -1,6 +1,6 @@
 <?php
 // session_start();
-if((isset($_POST['cancelbtn'])))
+if((isset($_POST['cancelbtn'])))                                                        //Cancel button submit check
 {
     require "header.php";
     require "extra/dbhandlerex.php";
@@ -16,7 +16,7 @@ if((isset($_POST['cancelbtn'])))
     echo $_SESSION['userid'];
 
 
-    $sql = "SELECT bid FROM booking WHERE usrid=? ;";
+    $sql = "SELECT bid FROM booking WHERE usrid=? ;";                                   //Preparing SQL Statement
         $stmt = mysqli_stmt_init($connect);
         if(!mysqli_stmt_prepare($stmt,$sql))
         {
@@ -26,11 +26,11 @@ if((isset($_POST['cancelbtn'])))
         else
         {
             mysqli_stmt_bind_param($stmt,"s",$suid);
-            mysqli_stmt_execute($stmt);
+            mysqli_stmt_execute($stmt);                                                 //Executing Query
             $result = mysqli_stmt_get_result($stmt);
 
 
-            while($row = mysqli_fetch_assoc($result))
+            while($row = mysqli_fetch_assoc($result))                                   //Displaying returned rows
             {
                 echo '<option>'.$row['bid'].'</option>';
             }

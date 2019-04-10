@@ -1,5 +1,5 @@
 <?php
-require "header.php";
+require "header.php";                                                               //Help Page
 ?>
 <head>
 <link rel="stylesheet" type="text/css" media="screen" href="./main.css">

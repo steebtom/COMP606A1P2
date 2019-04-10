@@ -37,7 +37,7 @@ session_start();
 
 
                  <?php
-            if(isset($_SESSION['userid']))
+            if(isset($_SESSION['userid']))                                      //Session Variable Check and Printing Page Layout
             {   
                 echo '<li class="nav-item">
                 <a class="nav-link" href="mybooking.php">My Bookings</a>
@@ -51,7 +51,7 @@ session_start();
             </ul>
 
             <?php
-            if(isset($_SESSION['userid']))
+            if(isset($_SESSION['userid']))                                      //Session Variable Check and Printing Page Layout
             {   
                 echo '<form action="extra/logoutex.php" method="post">
                 <button type="submit" class="btn btn-outline-dark"name="logoutbtn">Logout</button>
