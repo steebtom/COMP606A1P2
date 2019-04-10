@@ -6,7 +6,7 @@ require "header.php";
 
 
 
-        $sql = "SELECT  bid, msg, slot, bdate, btime FROM booking WHERE usrid=? ;";
+        $sql = "SELECT  bid, msg, slot, bdate, btime FROM booking WHERE usrid=? ;";           //Preparing Statemnt
         $stmt = mysqli_stmt_init($connect);
         if(!mysqli_stmt_prepare($stmt,$sql))
         {
@@ -16,8 +16,8 @@ require "header.php";
         else
         {
             mysqli_stmt_bind_param($stmt,"s",$suid);
-            mysqli_stmt_execute($stmt);
-            $result = mysqli_stmt_get_result($stmt);
+            mysqli_stmt_execute($stmt);                                                       //Statement Execution
+            $result = mysqli_stmt_get_result($stmt);                                          //Storing Returned Row
 
             echo '<table class="table">
                 <thead class="thead-dark">

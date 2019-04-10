@@ -1,5 +1,5 @@
 <?php
-require "header.php";
+require "header.php";                                                                 //Massage Page Layout
 
 ?>
 <head>
@@ -8,7 +8,7 @@ require "header.php";
 <main>
     <div class=wrapper>
     
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid">                                           <-- Jumbotron1 -->
         <div class="container">
           <h1 class="display-4">Massage 1</h1>
           <p class="lead">Athlete</p>
@@ -19,7 +19,7 @@ require "header.php";
         echo '<form action="booking.php" class="signup-form" method="post"><button type="submit" class="btn btn-outline-dark" name="msg1">Book Now</button></form>';
     }
     ?>
-        </div>
+        </div>                                                                        <-- Jumbotron2 -->
       </div>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -33,7 +33,7 @@ require "header.php";
         // echo '<a class="btn btn-default nva-link" href="booking.php">Signup</a>';
     }
     ?>
-        </div>
+        </div>                                                                        <-- Jumbotron2 -->
       </div>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">

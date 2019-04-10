@@ -12,10 +12,10 @@ require "header.php"
     <h1 class="display-4">Signup and Join us.</h1>
     <p class="lead">Get all our exclusive member privilages.</p>
 
-    <div class="wrapper-main">
+    <div class="wrapper-main">                                          
         <section class="section-default">
-            <!-- <h1>Signup</h1> -->
-            <?php
+
+            <?php                                       //Checking header for errors
                 if(isset($_GET['error']))
                 {
                     if($_GET['error'] == "emptyfields")
@@ -44,7 +44,7 @@ require "header.php"
                     }
                     
                 }
-            ?>
+            ?>                                                                          //Displaying Signup Form
             <form action="extra/signupex.php" class="signup-form" method="post">
             <div><input class="signupinp" type="text" name="username" placeholder="Username"></div>
             <div><input class="signupinp" type="text" name="email" placeholder="Email"></div>

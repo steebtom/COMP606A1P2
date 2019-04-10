@@ -17,8 +17,8 @@ require "extra/dbhandlerex1.php";
         else
         {
             
-            mysqli_stmt_execute($stmt);
-            $result = mysqli_stmt_get_result($stmt);
+            mysqli_stmt_execute($stmt);                                         //SQL Statement Execution
+            $result = mysqli_stmt_get_result($stmt);                            //Getting Results and Displaying data in table
 
             echo '<table class="table">
                 <thead class="thead-dark">
@@ -38,9 +38,9 @@ require "extra/dbhandlerex1.php";
                 </thead>
                 <tbody>';
 
-            while ($row = mysqli_fetch_assoc($result))
+            while ($row = mysqli_fetch_assoc($result))                          //Executes if query returs any row
             {
-              
+                                                                                    
               echo '<tr>';
               echo '<td>'.$row['bid'].'</td>';
               echo '<td>'.$row['usrid'].'</td>';

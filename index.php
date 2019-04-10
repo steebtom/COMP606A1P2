@@ -8,7 +8,7 @@ require "header.php";
     <div class=wrapper>
     
     <?php
-    if(!isset($_SESSION['userid']))
+    if(!isset($_SESSION['userid']))                                                             //Session Variable to Check Login
     {
         echo '<div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -17,7 +17,7 @@ require "header.php";
         </div>
       </div>';
     }
-    else
+    else                                                                                        //Executes if session variable not available
     {
         echo '<div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -26,7 +26,7 @@ require "header.php";
         </div>
         </div>';
         
-        if(isset($_GET['error']))
+        if(isset($_GET['error']))                                                               //Error Check
                 {
                     if($_GET['error'] == "emptyfields")
                     {
