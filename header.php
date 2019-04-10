@@ -18,7 +18,7 @@ session_start();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light " style="background-image: linear-gradient(to right, #E87173, rgb(250, 144, 23));">
+<nav class="navbar navbar-expand-lg navbar-light " style="background-image: linear-gradient(120deg, #84fab0 40%, #8fd3f4 100%);;">
 
         <img src="./image/logo.png" width="40" height="40">
         <a class="navbar-brand" href="index.php">Hamilton Spa & Massage Therapists</a>
@@ -34,9 +34,7 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link" href="massage.php">Massages</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.php">Projects</a>
-                 </li>
+
 
                  <?php
             if(isset($_SESSION['userid']))
