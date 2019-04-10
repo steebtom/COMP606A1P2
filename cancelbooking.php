@@ -37,7 +37,7 @@ if((isset($_POST['cancelbtn'])))
             echo'
                     </select>
                     </div>
-                    <div><button type="submit"  class="btn btn-outline-dark" name="cancelbtn1">Book</button></div>
+                    <div><button type="submit"  class="btn btn-outline-dark" name="cancelbtn1">Cancel Booking</button></div>
                 </form>';
         }
 
