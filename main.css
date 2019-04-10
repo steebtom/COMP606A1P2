@@ -1,6 +1,9 @@
 .signuperr{
     color: red;
 }
+.bookerr{
+    color: red;
+}
 .wrapper-main{
     align-content: center;
 }

@@ -20,7 +20,7 @@ if((isset($_POST['cancelbtn'])))
         $stmt = mysqli_stmt_init($connect);
         if(!mysqli_stmt_prepare($stmt,$sql))
         {
-            header("Location: ../index.php?error=sqlerror");
+            header("Location: ../index.php?error=sqlerrorcan1");
             exit();
         }
         else

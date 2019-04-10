@@ -25,6 +25,42 @@ require "header.php";
           <p class="lead">You are now logged in.</p>
         </div>
         </div>';
+        
+        if(isset($_GET['error']))
+                {
+                    if($_GET['error'] == "emptyfields")
+                    {
+                        echo '<p class="bookerr">Fill in all details.</p>';
+                    }
+                    elseif($_GET['error'] == "sqlerrorbook1")
+                    {
+                        echo '<p class="bookerr">SQL Error. Try again.</p>';
+                    }
+                    elseif($_GET['error'] == "bookingslotunavailable")
+                    {
+                        echo '<p class="bookerr">Selected Booking Slot unavailable.</p>';
+                    }
+                    elseif($_GET['error'] == "sqlerrorbook2")
+                    {
+                        echo '<p class="bookerr">SQL Error. Try Again.</p>';
+                    }
+                    elseif($_GET['error'] == "sqlerrorbook3")
+                    {
+                        echo '<p class="bookerr">SQL Error. Try Again.</p>';
+                    }
+                    elseif($_GET['error'] == "sqlerrorcan1")
+                    {
+                        echo '<p class="bookerr">SQL Error. Try Again.</p>';
+                    }
+                    elseif($_GET['success'] == "booking")
+                    {
+                        echo '<p class="signuperr">Booking Successful.</p>';
+                    }
+                    
+                    
+                }
+
+
     }
     ?>
     </div>
