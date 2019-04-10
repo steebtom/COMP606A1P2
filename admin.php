@@ -10,6 +10,7 @@ require "extra/dbhandlerex1.php";
         $stmt = mysqli_stmt_init($connect);
         if(!mysqli_stmt_prepare($stmt,$sql))
         {
+            echo "<script>alert('SQL Error!');</script>";
             header("Location: ../index.php?error=sqlerror");
             exit();
         }
