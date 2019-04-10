@@ -24,10 +24,9 @@ if((isset($_POST['msg1']))||(isset($_POST['msg2']))||(isset($_POST['msg3'])))
             <div class="form-group">
           <label >Time Slot:</label>
           <select class="form-control" name="mtime" required>
-            <option>Slot 1</option>
-            <option>Slot 2</option>
-            <option>Slot 3</option>
-
+            <option>09 AM</option>
+            <option>10 AM</option>
+            <option>11 AM</option>
           </select>
             </div>
             <div class="form-group">
@@ -43,10 +42,10 @@ if((isset($_POST['msg1']))||(isset($_POST['msg2']))||(isset($_POST['msg3'])))
           <label>Current Injuries:</label>
           
           <div class="radio">
-                <label><input type="radio" name="mcond1" checked> Yes</label>
+                <label><input type="radio" name="mcond1" value="yes" checked> Yes</label>
                 </div> 
                 <div class="radio">
-                <label><input type="radio" name="mcond1"> No</label>
+                <label><input type="radio" name="mcond1" value="no"> No</label>
             </div>
             </div>
             </div>
@@ -54,10 +53,10 @@ if((isset($_POST['msg1']))||(isset($_POST['msg2']))||(isset($_POST['msg3'])))
             <div class="form-group">
           <label>Psychologycal Condition:</label>
           <div class="radio">
-            <label><input type="radio" name="mcond2" checked> Yes</label>
+            <label><input type="radio" name="mcond2" value="yes" checked> Yes</label>
             </div>
             <div class="radio">
-            <label><input type="radio" name="mcond2"> No</label>
+            <label><input type="radio" name="mcond2" value="no"> No</label>
             </div>
             </div>
             <div><button type="submit" class="btn btn-outline-dark" name="bookbtn">Book</button></div>
