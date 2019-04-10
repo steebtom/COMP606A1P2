@@ -1,15 +1,15 @@
 <?php
-echo 'hello';
+// session_start();
 if((isset($_POST['cancelbtn'])))
 {
     require "header.php";
     require "extra/dbhandlerex.php";
 
 
-    echo     '<form action = "./extra/bookingex.php" method = "POST">
+    echo     '<form action = "./extra/cancelbookingex.php" method = "POST">
                     <div class="form-group">
                     <label >Massage Type:</label>
-                    <select class="form-control" name="mtype" required>';
+                    <select class="form-control" name="fbid" required>';
 
 
     $suid = $_SESSION['userid'];

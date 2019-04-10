@@ -1,0 +1,44 @@
+.signuperr{
+    color: red;
+}
+.wrapper-main{
+    align-content: center;
+}
+.jumbotron{
+    height: 100vh;
+    background-color: gainsboro;
+}
+.signupinp{
+    padding-inline-end: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.carousel-item{
+    display:inline-block;
+    height: 100vh;
+}
+.jumbotron{
+	background-color:#DAF7A6  ;
+}
+.jumbo1{
+    background-image: url("./image/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+.jumbo2{
+    background-image: url("./image/2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: bisque;
+    margin-bottom: 0;
+}
+.jumbo3{
+    background-image: url("./image/3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: goldenrod;
+    margin-bottom: 0;
+}

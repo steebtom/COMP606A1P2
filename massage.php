@@ -1,12 +1,13 @@
 <?php
 require "header.php";
+
 ?>
 <head>
 <link rel="stylesheet" type="text/css" media="screen" href="./main.css">
 </head>
 <main>
     <div class=wrapper>
-
+    
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Massage 1</h1>

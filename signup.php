@@ -42,7 +42,7 @@ require "header.php"
                     {
                         echo '<p class="signuperr">Username already exists.</p>';
                     }
-
+                    
                 }
             ?>
             <form action="extra/signupex.php" class="signup-form" method="post">
@@ -51,7 +51,7 @@ require "header.php"
             <div><input class="signupinp" type="password" name="password" placeholder="Password"></div>
             <div><input class="signupinp" type="password" name="passwordrepeat" placeholder="Confirm Password"></div>
             <div><button class="signupinp" type="submit" class="btn btn-outline-dark" name="signupbtn">Signup</button></div>
-
+            
             </form>
         </section>
 
